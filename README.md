@@ -1,50 +1,35 @@
-# Welcome to your Expo app 👋
+### Tech Stack
+Frontend
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+- Framework: React Native (v0.81) with Expo (v54)
+- Routing: Expo Router (File-based routing)
+- Language: TypeScript
+- Styling: expo-linear-gradient , @expo/vector-icons
+- State & Data: Convex React Client (Real-time data synchronization)
+Backend
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Platform: Convex (BaaS)
+- Database: Convex Real-time Database
+- API: Convex Query and Mutation functions (Serverless)
+### Key Functionalities
+1. Task Management:
+   
+   - Create: Add new tasks via an input field.
+   - Read: View a list of tasks, sorted by newest first.
+   - Update: Edit existing task text inline.
+   - Delete: Remove individual tasks with a confirmation prompt.
+   - Complete: Toggle tasks as done/active with a single tap.
+2. Advanced Features:
+   
+   - Real-time Sync: All changes are instantly reflected across devices without refreshing.
+   - Batch Operations: "Reset App" feature in the settings (Danger Zone) to delete all tasks at once.
+   - UI/UX:
+     - Loading states with spinners.
+     - Empty states when no tasks exist.
+     - Confirmation alerts for destructive actions.
+     - Haptic feedback and smooth gradients.
+### Project Structure Highlights
+- app/ : Contains the screens and navigation layout (Expo Router).
+- convex/ : Backend logic including database schema ( schema.ts ) and API functions ( todos.ts ).
+- components/ : Reusable UI components like TodoInput , DangerZone , EmptyState .
+- assets/styles/ : Centralized styling logic.
