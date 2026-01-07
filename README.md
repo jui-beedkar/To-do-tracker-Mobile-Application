@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Tech Stack
 Frontend
 
@@ -33,3 +34,7 @@ Backend
 - convex/ : Backend logic including database schema ( schema.ts ) and API functions ( todos.ts ).
 - components/ : Reusable UI components like TodoInput , DangerZone , EmptyState .
 - assets/styles/ : Centralized styling logic.
+=======
+# To-do-tracker-Mobile-Application
+A Modern To-Do List Application built with React Native (Expo) for the frontend and Convex for the backend. It provides a seamless, real-time experience for managing daily tasks with a polished user interface.
+>>>>>>> f8fbc7ae164de5a520bb533145aaefc6b987d104
